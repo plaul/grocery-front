@@ -1,0 +1,46 @@
+<div class="template">
+  <h3>All Vans</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table">
+        <thead></thead>
+        <tr>
+          <th>ID</th>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>capacity</th>
+          <th>#</th>
+        </tr>
+        <tbody id="table-rows"></tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <div id="delivery-container"
+        style="display:none;border: 1px solid lightskyblue;border-radius: 5px;padding:0.25em;">
+        <h3>VAN ID <span id="van-id"></span> <span>Deliveries</span></h3>
+        <div class="row">
+          <div class="col-md-4">
+            <input id="delivery-id-input" class="form-control" placeholder="Enter Delivery ID" />
+          </div>
+          <div class="col-md-4" style="display:flex">
+            <button class="btn btn-outline-primary" id="btn-add-delivery">Add Delivery</button>
+            <p style="margin-left:1em;" id="error-1"></p>
+          </div>
+          <p id="status-2"></p>
+        </div>
+        <div id="delivery-table" />
+        <!-- <table class="table">
+          <thead>
+            <tr>
+              <th>Delivery Id</th>
+              <th>Delivery Date</th>
+              <th>Total Weight</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-deliveries"></tbody>
+        </table> -->
+      </div>
+    </div>
+  </div>
+</div>

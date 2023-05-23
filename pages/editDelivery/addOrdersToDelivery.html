@@ -1,0 +1,72 @@
+<div class="template">
+  <h2>Delivery Details</h2>
+
+  <div class="row">
+    <div class="col-md-2">
+      <input id="delivery-id-input" class="form-control" placeholder="Enter Delivery ID" />
+    </div>
+    <div class="col-md-4" style="display:flex">
+      <button class="btn btn-outline-primary" id="btn-fetch-delivery">Get Delivery</button>
+      <p style="margin-left:1em;" id="error-1"></p>
+    </div>
+  </div>
+  <p id="status-1"></p>
+  <p id="deliveryResponse" style="min-height:1.3em;"></p>
+  <hr />
+  <div id="product-container" style="display:none">
+    <div class="row">
+      <div class="col-md-5" style="border:1px solid lightblue;border-radius: 5px; padding:10px;max-height: 13em;">
+        <h5>Add products to delivery</h5>
+        <br />
+        <div class="row">
+          <div class="col-md-5">
+            <input id="product-id-input" class="form-control" placeholder="Enter product name" />
+          </div>
+          <div class="col-md-7" style="display:flex">
+            <button class="btn btn-outline-primary" id="btn-fetch-product">Get Product</button>
+            <p style="margin-left:1em;" id="error-2"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p id="product-details" style="min-height: 1.5em;margin-top:0.3em;"></p>
+            <div style="display:flex">
+              <label class="form-label" for="quantity-input">Quantity</label>&nbsp;&nbsp;
+              <input id="quantity-input" type="number" class="form-control" style="width:4em;" />&nbsp;
+              <button class="btn btn-outline-primary" id="btn-add-product">Add To Delivery</button>
+            </div>
+            <p id="error-3"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h5 style="margin-top:.4em;">Products in delivery</h5>
+        <div style="height:20em; overflow-x: hidden;overflow-y: auto;display:block">
+          <table class="table" style="max-width:50em;">
+            <thead class="sticky-top bg-white">
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Total Weight (kg)</th>
+                <th>Total Price</th>
+                <th>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody id="table-rows"></tbody>
+            <tfoot class="sticky-bottom" style="background-color:darkcyan;color:white; ">
+              <tr>
+                <td>&nbsp;</td>
+                <td></td>
+                <td>&nbsp;</td>
+                <td id="t-foot-weight"></td>
+                <td id="t-foot-price"></td>
+                <td>&nbsp;</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

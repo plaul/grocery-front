@@ -1,0 +1,61 @@
+<div class="template">
+  <style>
+   
+
+    .car-btn-width {
+      width: 100%
+    }
+  </style>
+  <div style="max-width:900px;">
+    <h1>Find Product</h1>
+    <hr />
+    <div class="row">
+      <div class="col-md-2">
+        <input id="product-id-input" class="form-control" placeholder="Enter product-id" />
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-primary" id="btn-fetch-product">Get Product</button>
+      </div>
+    </div>
+    <hr />
+    <h4 id="info-text" style="margin-top: 0.5em;min-height: 1em;" id="id"></h4>
+    <div>
+      <form class="row">
+        <div class="row g-2">
+          <div class="col-md-5">
+            <label class="form-label" for="name">Name</label>
+            <input id="name" class="form-control" />
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-md-2">
+            <label class="form-label" for="price">Price</label>
+            <input type="number" id="price" class="form-control" />
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-md-2">
+            <label class="form-label" for="weight">Weight</label>
+            <input type="number" id="weight" class="form-control" />
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-1">
+            <button class="btn btn-outline-dark" style="width: 100%;" id="save-product-btn">Save</button>
+          </div>
+        </div>
+      </form>
+
+      <p id="status" style="min-height: 1em;"> </p>
+      <div class="row" style="margin-top:2em;">
+        <div class="col-md-3">
+          <button id="btn-submit-edited-product" class="btn btn-dark btn-width">Submit Changes</button>
+        </div>
+        <div class="col-md-3">
+          <button id="btn-delete-product" class="btn btn-dark btn-width">Delete Product</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

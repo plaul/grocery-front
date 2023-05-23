@@ -1,0 +1,32 @@
+<div class="template">
+  <style>
+    .row-margin-top {
+      margin-top: 0.25em;
+      ;
+    }
+  </style>
+  <h2>New Delivery</h2>
+  <form>
+    <div class="row g-3">
+      <div class="col-md-3">
+        <label class="form-label" for="delivery-date">Delivery Date </label>
+        <input class="form-control" type="date" id="delivery-date" style="max-width:12em;" />
+      </div>
+    </div>
+    <div class="row g-3 row-margin-top">
+      <div class="col-md-2">
+        <label class="form-label" for="from-warehouse-selector">From Warehouse</label>
+        <select class="form-control" id="from-warehouse-selector"></select>
+      </div>
+    </div>
+    <div class="row g-3 row-margin-top">
+      <div class="col-md-6">
+        <label class="form-label" for="destination">Destination (full address)</label>
+        <input class="form-control" id="destination" />
+      </div>
+    </div>
+
+    <button class="btn btn-outline-success row-margin-top" id="btn-save-delivery">Save Delivery</button>
+  </form>
+  <p id="response"></p>
+</div>
